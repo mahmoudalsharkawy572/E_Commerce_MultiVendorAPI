@@ -15,7 +15,7 @@ namespace ECommerce.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ProductsController(IMediator _mediator) : ControllerBase
     {
         [HttpGet]
