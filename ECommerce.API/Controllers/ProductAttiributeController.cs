@@ -10,7 +10,7 @@ namespace ECommerce.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ProductAttiributeController(IMediator _mediator) : ControllerBase
     {
         [HttpPost("{productId}/attributes")]
